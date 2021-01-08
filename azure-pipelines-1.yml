@@ -25,7 +25,7 @@ steps:
     cdeServerName: 'cddirector.io'
     cdeServerPort: '443'
     tenantId: '00000000-0000-0000-0000-000000000000'
-    apikey: 'eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InN1cGVydXNlckBjYS5jb20iLCJ0ZW5hbnRJZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIsI'
+    apikey: 'a43f9c1a-9b54-476b-9107-ea5a03e9f19c'
     applicationName: 'DEMO-APP'
     applicationVersion: '1.0'
     cddTokens: '{"packageName":"BillingPackage_85","packageVersion":"1.0.2"}'
