@@ -1,0 +1,33 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
+- task: sendNotificationToCDD@0
+  inputs:
+    cdeServerName: 'cddirector.io'
+    cdeServerPort: '443'
+    tenantId: '00000000-0000-0000-0000-000000000000'
+    apikey: 'eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InN1cGVydXNlckBjYS5jb20iLCJ0ZW5hbnRJZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIsI'
+    applicationName: 'DEMO-APP'
+    applicationVersion: '1.0'
+    cddTokens: '{"packageName":"BillingPackage_85","packageVersion":"1.0.2"}'
+    commitSource: '{"itemsToReturn":"1,2,7,8"}'
+    testData: '[{"name":"JUnit_Test_Source","parameters":{"Branch":"myBranch","key2":"value2"}}]'
