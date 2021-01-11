@@ -25,7 +25,7 @@ steps:
     cdeServerName: 'cddirector.io'
     cdeServerPort: '443'
     tenantId: '755ff689-327f-4235-adc1-9dae47001f66'
-    apikey: '$API_KEY'
+    apikey: '$(API_KEY)'
     applicationNameSelection: 'CustomAppName'
     applicationName: 'DEMO-APP'
     applicationVersionSelection: 'CustomAppVersion'
