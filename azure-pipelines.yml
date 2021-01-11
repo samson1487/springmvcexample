@@ -25,7 +25,7 @@ steps:
     cdeServerName: 'cddirector.io'
     cdeServerPort: '443'
     tenantId: '755ff689-327f-4235-adc1-9dae47001f66'
-    apikey: 'eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InN1bWl0LnNhbXNvbkBicm9hZGNvbS5jb20iLCJ0ZW5hbnRJZCI6Ijc1NWZmNjg5LTMyN2YtNDIzNS1hZGMxLTlkYWU0NzAwMWY2NiIsInVzZXJJZCI6MSwianRpIjoiMTQyN2VmMmMtY2Q0OS00MTg2LTlhMjItZGFmMDczODk3OWI4IiwiZXhwIjoxNjE4MTI2NDM3fQ._v7I5CW2LTqS0L2FXDbNeevV7gXxDC1kKcHdgdwmBSpO_y8WpHQ-43mAUP_pKOOgt5j5lPp1qLmqPi23VBh5aQ'
+    apikey: '$API_KEY'
     applicationNameSelection: 'CustomAppName'
     applicationName: 'DEMO-APP'
     applicationVersionSelection: 'CustomAppVersion'
