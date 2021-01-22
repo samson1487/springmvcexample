@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: sendNotificationToCDD@0
   inputs:
-    cddEndpoint: 'CDD-TEST'
+    cddEndpoint: 'CDD-TEST-NEW'
     application: 'customAppName'
     applicationName: 'DEMO-APP'
     applicationVersion: 'customAppVersion'
