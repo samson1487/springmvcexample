@@ -25,4 +25,8 @@ steps:
           }
        ]
     notificationExecutionStrategy: 'createRelease'
+    dslSource: 'fileSource'
+    fileSourceName: 'GithubFS'
+    dslFilename: 'CDD-FileSource/relWithAppVerBranch.json'
+    fileSourceParameters: '{"branch":"master"}'
     dslParameter: '{ "appName": "DEMO-APP", "appVerName": "1.0", "relName": "new-release-12", "envName": "DEV" }'
