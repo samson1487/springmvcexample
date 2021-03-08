@@ -15,6 +15,7 @@ steps:
     cddEndpoint: 'CDD-TEST-NEW'
     application: 'repoNameAsApplicationName'
     applicationVersion: 'branchNameAsVersion'
+    ignoreNonExistentCDDApp: false
     cddTokens: '{"BUILD_NAME":"$(Build.DefinitionName)","PROJECT":"$(System.TeamProject)"}'
     commitSource: '{"itemsToReturn":"1,2,7,8"}'
     testData: |
